@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LucaPrint - Browser Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <a href="#" class="brand">
+        <span class="brand-icon">L</span>
+        <span>LUCAPRINT</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav id="navMenu">
+
+        <a href="#fingerprint">MY FINGERPRINT</a>
+        <a href="#extension">MY EXTENSION</a>
+        <a href="#statistics">GLOBAL STATISTICS</a>
+        <a href="#survey">SURVEY</a>
+        <a href="#blog">BLOG</a>
+        <a href="#links">USEFUL LINKS</a>
+
+        <select id="languageSelector">
+            <option>EN</option>
+            <option>FR</option>
+            <option>ES</option>
+            <option>DE</option>
+        </select>
+
+        <button id="themeButton" class="theme-button">
+            ◐
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <div class="hero-top">
+
+            <div>
+
+                <div class="eyebrow">
+                    LUCAPRINT / BROWSER INTELLIGENCE
+                </div>
+
+                <h1>
+                   DARE TO BE <br>
+                    <span>DIFFERENT?</span>
+                </h1>
+
+                <p>
+                    Explore the browser and device information that
+                    modern web technologies can expose locally.
+                </p>
+
+            </div>
+
+            <div class="hero-actions">
+
+                <button class="white-button" id="downloadReport">
+                    ↓ DOWNLOAD
+                </button>
+
+                <button class="transparent-button" id="timelineButton">
+                    ◷ TIMELINE
+                </button>
+
+                <button class="transparent-button" id="refreshButton">
+                    ↻ REFRESH
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="time-tabs">
+
+            <button class="time-tab active">TODAY</button>
+            <button class="time-tab">7 DAYS</button>
+            <button class="time-tab">15 DAYS</button>
+            <button class="time-tab">30 DAYS</button>
+            <button class="time-tab">90 DAYS</button>
+            <button class="time-tab">ALL TIME</button>
+
+        </div>
+
+
+        <div class="demo-result">
+
+            <div class="result-check">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>DEMONSTRATION RESULT</strong>
+
+                <p>
+                    Your browser profile has been generated locally.
+                </p>
+
+                <small>
+                    This is not a comparison against a real global database.
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="container">
+
+
+<!-- ================= FINGERPRINT ID ================= -->
+
+<section class="identity-section" id="fingerprint">
+
+    <div>
+
+        <span class="section-tag">
+            YOUR FINGERPRINT
+        </span>
+
+        <h2>
+            Browser Identity
+        </h2>
+
+        <p>
+            A local demonstration identifier generated from
+            browser characteristics available to this webpage.
+        </p>
+
+    </div>
+
+
+    <div class="identity-card">
+
+        <span>LOCAL FINGERPRINT ID</span>
+
+        <div class="id-row">
+
+            <strong id="fingerprintId">
+                GENERATING...
+            </strong>
+
+            <button id="copyId">
+                COPY
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= TOOLBAR ================= -->
+
+<div class="dashboard-toolbar">
+
+    <div>
+
+        <span class="section-tag">
+            FINGERPRINT SUMMARY
+        </span>
+
+        <h2>
+            Browser Profile
+        </h2>
+
+    </div>
+
+
+    <div class="toolbar-right">
+
+        <div class="live">
+            <i></i>
+            LIVE
+        </div>
+
+        <input
+            type="search"
+            id="searchCards"
+            placeholder="Search information..."
+        >
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= FINGERPRINT GRID ================= -->
+
+<section class="fingerprint-grid" id="fingerprintGrid">
+
+
+    <!-- OS -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual windows">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="card-title">
+                <span>OPERATING SYSTEM</span>
+                <h3 id="os">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Operating System</span>
+
+            <div class="bar">
+                <i style="width:45%"></i>
+            </div>
+
+            <strong>44.60%</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- BROWSER -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual edge">
+                <span>e</span>
+            </div>
+
+            <div class="card-title">
+                <span>BROWSER</span>
+                <h3 id="browser">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Browser</span>
+
+            <div class="bar">
+                <i style="width:49%"></i>
+            </div>
+
+            <strong>49.45%</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- LANGUAGE -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual language">
+                文
+            </div>
+
+            <div class="card-title">
+                <span>LANGUAGE</span>
+                <h3 id="language">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Language</span>
+
+            <div class="bar">
+                <i style="width:64%"></i>
+            </div>
+
+            <strong>64.02%</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- TIMEZONE -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual timezone">
+                ◷
+            </div>
+
+            <div class="card-title">
+                <span>TIMEZONE</span>
+                <h3 id="timezone">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Timezone</span>
+
+            <div class="bar">
+                <i style="width:15%"></i>
+            </div>
+
+            <strong>15.20%</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- SCREEN -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual screen">
+                ▣
+            </div>
+
+            <div class="card-title">
+                <span>SCREEN</span>
+                <h3 id="screen">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Screen</span>
+
+            <div class="bar">
+                <i style="width:72%"></i>
+            </div>
+
+            <strong>72.40%</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- DEVICE -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual device">
+                ▯
+            </div>
+
+            <div class="card-title">
+                <span>DEVICE TYPE</span>
+                <h3 id="device">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Device</span>
+
+            <div class="bar">
+                <i style="width:61%"></i>
+            </div>
+
+            <strong>61.40%</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- CPU -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual cpu">
+                ⚙
+            </div>
+
+            <div class="card-title">
+                <span>CPU</span>
+                <h3 id="cpu">Checking...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>CPU information</span>
+
+            <div class="bar">
+                <i style="width:35%"></i>
+            </div>
+
+            <strong>API</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- NETWORK -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual network">
+                ⌁
+            </div>
+
+            <div class="card-title">
+                <span>NETWORK</span>
+                <h3 id="network">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Network connection</span>
+
+            <div class="bar">
+                <i style="width:80%"></i>
+            </div>
+
+            <strong id="networkSpeed">API</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- BATTERY -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual battery">
+                ▮
+            </div>
+
+            <div class="card-title">
+                <span>BATTERY</span>
+                <h3 id="battery">Checking...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Battery status</span>
+
+            <div class="bar">
+                <i id="batteryBar" style="width:50%"></i>
+            </div>
+
+            <strong id="batteryPercent">API</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- COLOR -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual color">
+                ◉
+            </div>
+
+            <div class="card-title">
+                <span>COLOR DEPTH</span>
+                <h3 id="colorDepth">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Color depth</span>
+
+            <div class="bar">
+                <i style="width:94%"></i>
+            </div>
+
+            <strong>94.12%</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- TOUCH -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual touch">
+                ☝
+            </div>
+
+            <div class="card-title">
+                <span>TOUCH</span>
+                <h3 id="touch">Detecting...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Touch support</span>
+
+            <div class="bar">
+                <i style="width:30%"></i>
+            </div>
+
+            <strong>API</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- WEBGL -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual webgl">
+                ◈
+            </div>
+
+            <div class="card-title">
+                <span>WEBGL</span>
+                <h3 id="webgl">Checking...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Graphics API</span>
+
+            <div class="bar">
+                <i style="width:70%"></i>
+            </div>
+
+            <strong>API</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- CANVAS -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual canvas">
+                ◇
+            </div>
+
+            <div class="card-title">
+                <span>CANVAS</span>
+                <h3 id="canvas">Checking...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>HTML5 Canvas</span>
+
+            <div class="bar">
+                <i style="width:82%"></i>
+            </div>
+
+            <strong>API</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- COOKIES -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual cookies">
+                ●
+            </div>
+
+            <div class="card-title">
+                <span>COOKIES</span>
+                <h3 id="cookies">Checking...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Cookie support</span>
+
+            <div class="bar">
+                <i style="width:90%"></i>
+            </div>
+
+            <strong>API</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- STORAGE -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual storage">
+                ▤
+            </div>
+
+            <div class="card-title">
+                <span>LOCAL STORAGE</span>
+                <h3 id="storage">Checking...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Storage API</span>
+
+            <div class="bar">
+                <i style="width:88%"></i>
+            </div>
+
+            <strong>API</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual javascript">
+                JS
+            </div>
+
+            <div class="card-title">
+                <span>JAVASCRIPT</span>
+                <h3 id="javascript">Enabled</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>JavaScript</span>
+
+            <div class="bar">
+                <i style="width:100%"></i>
+            </div>
+
+            <strong>100%</strong>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- ONLINE -->
+
+    <article class="finger-card">
+
+        <div class="card-top">
+
+            <div class="visual online">
+                ●
+            </div>
+
+            <div class="card-title">
+                <span>ONLINE STATUS</span>
+                <h3 id="online">Checking...</h3>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+
+            <span>Connection status</span>
+
+            <div class="bar">
+                <i style="width:97%"></i>
+            </div>
+
+            <strong>97.21%</strong>
+
+        </div>
+
+    </article>
+
+</section>
+
+
+
+<!-- ================= LIVE DATA PANEL ================= -->
+
+<section class="live-panel">
+
+    <div class="section-title">
+
+        <span class="section-tag">
+            LIVE BROWSER DATA
+        </span>
+
+        <h2>
+            Technical Environment
+        </h2>
+
+    </div>
+
+
+    <div class="technical-grid">
+
+        <div class="technical-item">
+            <span>USER AGENT</span>
+            <p id="userAgent">Loading...</p>
+        </div>
+
+        <div class="technical-item">
+            <span>PLATFORM</span>
+            <p id="platform">Loading...</p>
+        </div>
+
+        <div class="technical-item">
+            <span>CPU CORES</span>
+            <p id="cores">Loading...</p>
+        </div>
+
+        <div class="technical-item">
+            <span>DEVICE MEMORY</span>
+            <p id="memory">Loading...</p>
+        </div>
+
+        <div class="technical-item">
+            <span>PIXEL RATIO</span>
+            <p id="pixelRatio">Loading...</p>
+        </div>
+
+        <div class="technical-item">
+            <span>DO NOT TRACK</span>
+            <p id="dnt">Loading...</p>
+        </div>
+
+        <div class="technical-item">
+            <span>PDF VIEWER</span>
+            <p id="pdf">Loading...</p>
+        </div>
+
+        <div class="technical-item">
+            <span>PLUGINS</span>
+            <p id="plugins">Loading...</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= BROWSER ACTIVITY ================= -->
+
+<section>
+
+    <div class="section-title">
+
+        <span class="section-tag">
+            BROWSER ACTIVITIES
+        </span>
+
+        <h2>
+            What Your Browser Reveals
+        </h2>
+
+    </div>
+
+
+    <div class="activity-grid">
+
+        <article class="activity">
+
+            <div class="activity-icon">🌐</div>
+
+            <div>
+                <small>01 / BROWSER</small>
+
+                <h3>Browser Identification</h3>
+
+                <p>
+                    Detects the browser family using locally
+                    available browser information.
+                </p>
+
+                <strong id="activityBrowser">
+                    Loading...
+                </strong>
+            </div>
+
+        </article>
+
+
+        <article class="activity">
+
+            <div class="activity-icon">🖥️</div>
+
+            <div>
+                <small>02 / DISPLAY</small>
+
+                <h3>Display Information</h3>
+
+                <p>
+                    Reads screen resolution, color depth and
+                    device pixel ratio.
+                </p>
+
+                <strong id="activityScreen">
+                    Loading...
+                </strong>
+            </div>
+
+        </article>
+
+
+        <article class="activity">
+
+            <div class="activity-icon">📡</div>
+
+            <div>
+                <small>03 / NETWORK</small>
+
+                <h3>Connection Information</h3>
+
+                <p>
+                    Uses the Network Information API when the
+                    browser supports it.
+                </p>
+
+                <strong id="activityNetwork">
+                    Loading...
+                </strong>
+            </div>
+
+        </article>
+
+
+        <article class="activity">
+
+            <div class="activity-icon">🎨</div>
+
+            <div>
+                <small>04 / GRAPHICS</small>
+
+                <h3>Graphics Capability</h3>
+
+                <p>
+                    Checks Canvas and WebGL capabilities available
+                    to the webpage.
+                </p>
+
+                <strong id="activityGraphics">
+                    Loading...
+                </strong>
+            </div>
+
+        </article>
+
+
+        <article class="activity">
+
+            <div class="activity-icon">🔋</div>
+
+            <div>
+                <small>05 / DEVICE</small>
+
+                <h3>Battery Information</h3>
+
+                <p>
+                    Reads battery information only when the browser
+                    exposes the Battery API.
+                </p>
+
+                <strong id="activityBattery">
+                    Loading...
+                </strong>
+            </div>
+
+        </article>
+
+
+        <article class="activity">
+
+            <div class="activity-icon">⚙️</div>
+
+            <div>
+                <small>06 / HARDWARE</small>
+
+                <h3>Hardware Information</h3>
+
+                <p>
+                    Reads CPU and memory information where supported.
+                </p>
+
+                <strong id="activityHardware">
+                    Loading...
+                </strong>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= STATISTICS ================= -->
+
+<section id="statistics">
+
+    <div class="section-title">
+
+        <span class="section-tag">
+            GLOBAL STATISTICS
+        </span>
+
+        <h2>
+            Demonstration Dataset
+        </h2>
+
+    </div>
+
+
+    <div class="statistics-warning">
+
+        <div class="warning-icon">i</div>
+
+        <p>
+            These statistics are demonstration values only.
+            LucaPrint does not send your fingerprint to a
+            global server or compare it against a real database.
+        </p>
+
+    </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <span>WINDOWS</span>
+            <strong>44.60%</strong>
+            <div><i style="width:44.6%"></i></div>
+        </div>
+
+        <div class="stat">
+            <span>CHROME</span>
+            <strong>49.45%</strong>
+            <div><i style="width:49.45%"></i></div>
+        </div>
+
+        <div class="stat">
+            <span>COLOR DEPTH</span>
+            <strong>94.12%</strong>
+            <div><i style="width:94.12%"></i></div>
+        </div>
+
+        <div class="stat">
+            <span>ONLINE</span>
+            <strong>97.21%</strong>
+            <div><i style="width:97.21%"></i></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= EXTENSION ================= -->
+
+<section class="extension" id="extension">
+
+    <div>
+
+        <span class="section-tag">
+            MY EXTENSION
+        </span>
+
+        <h2>
+            LucaPrint Extension
+        </h2>
+
+        <p>
+            A future browser extension interface for viewing
+            browser intelligence directly from your browser.
+        </p>
+
+        <button id="extensionButton">
+            EXPLORE EXTENSION
+        </button>
+
+    </div>
+
+
+    <div class="extension-preview">
+
+        <div class="extension-window">
+
+            <div class="extension-head">
+                LUCAPRINT
+            </div>
+
+            <div class="extension-status">
+                <span></span>
+                Browser monitored locally
+            </div>
+
+            <div class="extension-line"></div>
+            <div class="extension-line"></div>
+            <div class="extension-line small"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SURVEY ================= -->
+
+<section class="survey" id="survey">
+
+    <span class="section-tag">
+        SURVEY
+    </span>
+
+    <h2>
+        How useful is browser intelligence?
+    </h2>
+
+    <p>
+        Select an option below.
+    </p>
+
+    <div class="survey-options">
+
+        <button>VERY USEFUL</button>
+        <button>USEFUL</button>
+        <button>NOT SURE</button>
+        <button>NOT USEFUL</button>
+
+    </div>
+
+    <strong id="surveyResult"></strong>
+
+</section>
+
+
+
+<!-- ================= BLOG ================= -->
+
+<section id="blog">
+
+    <div class="section-title">
+
+        <span class="section-tag">
+            BLOG
+        </span>
+
+        <h2>
+            Learn About Browser Intelligence
+        </h2>
+
+    </div>
+
+
+    <div class="blog-grid">
+
+        <article class="blog-card">
+
+            <div class="blog-picture">
+                🔐
+            </div>
+
+            <div>
+                <small>PRIVACY</small>
+
+                <h3>
+                    What Is Browser Fingerprinting?
+                </h3>
+
+                <p>
+                    Understand how websites can observe browser
+                    characteristics.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="blog-card">
+
+            <div class="blog-picture">
+                🌍
+            </div>
+
+            <div>
+                <small>WEB</small>
+
+                <h3>
+                    Browser APIs Explained
+                </h3>
+
+                <p>
+                    Explore some of the APIs available to modern
+                    websites.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="blog-card">
+
+            <div class="blog-picture">
+                🛡️
+            </div>
+
+            <div>
+                <small>SECURITY</small>
+
+                <h3>
+                    Browser Privacy
+                </h3>
+
+                <p>
+                    Learn what information websites may receive from
+                    your browser.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= USEFUL LINKS ================= -->
+
+<section id="links">
+
+    <div class="section-title">
+
+        <span class="section-tag">
+            USEFUL LINKS
+        </span>
+
+        <h2>
+            LucaPrint
+        </h2>
+
+    </div>
+
+
+    <div class="links-grid">
+
+        <a href="#fingerprint">
+            <strong>My Fingerprint</strong>
+            <span>Browser intelligence</span>
+        </a>
+
+        <a href="#statistics">
+            <strong>Statistics</strong>
+            <span>Demonstration dataset</span>
+        </a>
+
+        <a href="#extension">
+            <strong>Extension</strong>
+            <span>Extension concept</span>
+        </a>
+
+        <a href="#blog">
+            <strong>Blog</strong>
+            <span>Learn more</span>
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-brand">
+        <span class="brand-icon">S</span>
+        LUCAPRINT
+    </div>
+
+    <p>
+        Browser Intelligence / Frontend Demonstration
+    </p>
+
+    <small>
+        No backend • No database • No external fingerprinting API
+    </small>
+
+    <div class="copyright">
+        © 2026 ShadowPrint
+    </div>
+
+</footer>
+
+
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-box">
+
+        <button id="closeModal">
+            ×
+        </button>
+
+        <h2 id="modalTitle">
+            LucaPrint
+        </h2>
+
+        <p id="modalText">
+            Information
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
